@@ -6,10 +6,17 @@
  * Made By MaterializeCSS.com
  */
 
-#title{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
+
+#title{
+  font-family: 'VT323', monospace;
+  color: rgb(233, 233, 238);
+  font-size: 120px;
+}
+#city-cta{
+ 
+  
+}
  
 nav ul a,
 nav .brand-logo {
@@ -25,10 +32,11 @@ p {
 }
 
 .parallax-container {
-  min-height: 480px;
-  line-height: 0;
+  min-height: 580px;
+  line-height: 3;
   height: auto;
   color: rgba(255,255,255,.9);
+  
 }
   .parallax-container .section {
     width: 100%;
