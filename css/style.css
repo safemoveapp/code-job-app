@@ -12,7 +12,7 @@
   font-family: 'VT323', monospace;
   color: rgb(233, 233, 238);
   font-size: 120px;
-  background: rgba(0, 0, 0, 0.454);
+  background: rgba(0, 0, 0, 0.297);
 }
 #city-cta{
  
@@ -44,6 +44,7 @@ p {
 }
 #city-cta{
 margin-top: 20px;
+color: black;
 }
 .parallax-container .section {
     width: 100%;
