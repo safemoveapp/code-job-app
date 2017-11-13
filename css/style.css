@@ -84,3 +84,17 @@ color: black;
 footer.page-footer {
   margin: 0;
 }
+
+/* page 2 specific styles  */
+
+.map-container, .job-container{
+  min-height: 600px;
+  border: red solid 1px;
+}
+
+#section-1-2 {
+  min-height: 150px;
+}
+#section-2-2 {
+  min-height: 150px;
+}
