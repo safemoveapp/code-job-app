@@ -6,10 +6,18 @@
  * Made By MaterializeCSS.com
  */
 
-#title{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
+
+#title{
+  font-family: 'VT323', monospace;
+  color: rgb(233, 233, 238);
+  font-size: 120px;
+  background: rgba(0, 0, 0, 0.297);
+}
+#city-cta{
+ 
+  
+}
  
 nav ul a,
 nav .brand-logo {
@@ -25,15 +33,28 @@ p {
 }
 
 .parallax-container {
-  min-height: 480px;
+  min-height: 580px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: white;
 }
-  .parallax-container .section {
+#city-search{
+  color: black;
+  
+}
+#city-cta{
+margin-top: 20px;
+color: black;
+}
+.parallax-container .section {
     width: 100%;
-  }
-
+}
+#section-1 {
+    min-height: 350px;
+}
+#section-2 {
+    min-height: 400px;
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -56,7 +77,24 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
+.page-footer{
+  background: rgb(141, 81, 225);
+  
+}
 footer.page-footer {
   margin: 0;
+}
+
+/* page 2 specific styles  */
+
+.map-container, .job-container{
+  min-height: 600px;
+  border: red solid 1px;
+}
+
+#section-1-2 {
+  min-height: 150px;
+}
+#section-2-2 {
+  min-height: 150px;
 }
