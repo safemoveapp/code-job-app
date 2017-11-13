@@ -98,3 +98,8 @@ footer.page-footer {
 #section-2-2 {
   min-height: 150px;
 }
+.image-size {
+  height: 30%;
+  width: 25%;
+  display: inline-block;
+}
