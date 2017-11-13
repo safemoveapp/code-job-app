@@ -12,6 +12,7 @@
   font-family: 'VT323', monospace;
   color: rgb(233, 233, 238);
   font-size: 120px;
+  background: rgba(0, 0, 0, 0.454);
 }
 #city-cta{
  
@@ -33,15 +34,26 @@ p {
 
 .parallax-container {
   min-height: 580px;
-  line-height: 3;
+  line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: white;
+}
+#city-search{
+  color: black;
   
 }
-  .parallax-container .section {
+#city-cta{
+margin-top: 20px;
+}
+.parallax-container .section {
     width: 100%;
-  }
-
+}
+#section-1 {
+    min-height: 350px;
+}
+#section-2 {
+    min-height: 400px;
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -64,7 +76,10 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
+.page-footer{
+  background: rgb(141, 81, 225);
+  
+}
 footer.page-footer {
   margin: 0;
 }
