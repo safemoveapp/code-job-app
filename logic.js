@@ -52,7 +52,7 @@ jQuery(function ($) {
 
     function displayCards() {
         var city = window.localStorage.getItem('input');
-        var queryUrl = "https://service.dice.com/api/rest/jobsearch/v1/simple.json?text=coding" +
+        var queryUrl = "http://service.dice.com/api/rest/jobsearch/v1/simple.json?text=coding" +
             "&city=" + city;
         $.ajax({
             url: queryUrl,
