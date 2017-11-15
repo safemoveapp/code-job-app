@@ -8,44 +8,31 @@
   <title>Coding Jobs Home Page</title>
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <!-- <link href="style.css" type="text/css"> -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 
 
 </head>
 
 <body>
 
-<!-- navigation to home page -->
+  <!-- navigation to home page -->
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Coding Jobs</a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li>
-          <a href="#">Navbar Link</a>
-        </li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse">
-        <i class="material-icons">menu</i>
+      <a id="logo-container" href="index.html" class="brand-logo">
+        <h5 id="name">codingjobs.com</h5>
       </a>
+      <ul class="right">
+        <li>
+          <a id="home" href="index.html">Home</a>
+        </li>
+      </ul>
     </div>
   </nav>
-
-  
-
-
- 
 
   <div class="parallax-container valign-wrapper" id="section-1-2">
     <div class="section no-pad-bot">
@@ -56,71 +43,58 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="images/webdev.jpg" alt="tech keyboard image">
+      <img src="images/codingmainblur.jpg" alt="tech keyboard image">
     </div>
   </div>
- 
-  <!-- Job postings container Goes here --> 
- 
-  <div class="job-container">
+
+  <!-- Job postings container below -->
+
+  <div class="container">
+    <div class="job-container">
       <div class="section">
-  
         <div class="row">
           <div class="col s12  center">
-            <div>
-  
+            <div class="carousel">
               <!-- carousel Goes here -->
-  
             </div>
-          
           </div>
         </div>
-  
       </div>
-    </div>
-  
-
-
-  <div class="parallax-container valign-wrapper" id="section-2-2">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h3 class="header col s12 ">See where your job is located.</h3>
-        </div>
-      </div>
-    </div>
-    <div class="parallax">
-      <img src="images/cityblur.jpg" alt="city-scape-image">
-    </div>
-  </div>
-  
- <!-- google maps job locator goes here -->
-
-  <div class="map-container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12  center">
-          <div>
-
-            <!-- Map Image Goes here -->
-
-          </div>
-          <!-- <p class="left-align light">At Coding Jobs, we understand the specific wants and needs of the professional web developer looking to re-locate
-                                    to a new city, or explore new opportunities in specific cities they want to work in. When you use our service,
-                                    we will find only the most relevant coding jobs in the city you search. We filter out all the other jobs that
-                                    are either too far away, or in completly fields than computer coding.
-                                  </p> -->
-        </div>
-      </div>
-
     </div>
   </div>
 
- 
- 
+
+  <div id="map-job-container">
+    <div class="parallax-container valign-wrapper" id="section-2-2">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 ">See where your next job is located.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="images/cityblur.jpg" alt="city-scape-image">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="map-container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12  center">
+              <div id="map-frame">
+
+                <!-- Map Image Goes here -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- footer stays here -->
-
 
   <footer class="page-footer">
     <div class="container">
@@ -129,7 +103,6 @@
           <h5 class="white-text">Team Tech Sloth</h5>
           <p class="grey-text text-lighten-4">Our highly skilled web development team was compiled from the most diverse and varied talent representing front
             end design, both programatical and visual, to bring you the best experience possible.</p>
-
         </div>
         <div class="col l3 s6">
           <h5>Team member</h5>
@@ -169,25 +142,20 @@
     </div>
     <div class="footer-copyright">
       <div class="container" id="credits">
-
         © 2017 Designed by:
         <a class="grey-text text-lighten-4 right" href="#!">Team Tech Sloth</a>
       </div>
     </div>
   </footer>
 
-
-
-
-
-
-
   <!-- scripts -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="logic.js"></script>
+
 </body>
 
 </html>
