@@ -1,8 +1,9 @@
+function initializeCarousel() {
 $(".carousel").slick({
     dots: true,
 
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
@@ -10,7 +11,7 @@ $(".carousel").slick({
     responsive: [{
         breakpoint: 1024,
         settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             autoplay: true,
@@ -38,6 +39,7 @@ $(".carousel").slick({
     }
     ]
 });
+}
 
 jQuery(function ($) {
    
@@ -50,7 +52,7 @@ jQuery(function ($) {
 
     function displayCards() {
         var city = window.localStorage.getItem('input');
-        var queryUrl = "http://service.dice.com/api/rest/jobsearch/v1/simple.json?text=" +
+        var queryUrl = "http://service.dice.com/api/rest/jobsearch/v1/simple.json?text=coding" +
             "&city=" + city;
         $.ajax({
             url: queryUrl,
@@ -60,18 +62,12 @@ jQuery(function ($) {
             var list = response.resultItemList;
 
             for (i = 0; i < 8; i++) {
-                var $jobDiv = $(".carousel");
-                // $jobDiv.append("<div class='card-size card purple darken-1'><div class='card-content white-text'>" + "<div class='card-title job-name'>" +
-                //     (list[i].jobTitle).substring(0, 30) + " </div><div class='card-title city-name' data-name=" + list[i].location + ">" +
-                //     list[i].location + " </div> <div class='card-title posted-date'>" +
-                //     list[i].date + "</div> <div class='card-title pcompany-name' data-name=" + list[i].company + ">" +
-                //     list[i].company + "</div> <a href='#' class='map-link'>See map for location</a>");
-                // above sample line replaces job posting detail with map  
+                var $jobDiv = $(".carousel"); 
 
                 var $card = $("<div>").addClass("card-size card purple darken-1");
-                var $content = $("<div>").addClass("card-content white-black");
+                var $content = $("<div>").addClass("card-content white-text card-custom");
                 var $jobTitle = $("<div>").addClass("card-title job-name");
-                $jobTitle.append((list[i].jobTitle).substring(0, 20));
+                $jobTitle.append((list[i].jobTitle).substring(0, 25));
 
                 var $location = $("<div>").addClass("card-title city-name");
                 $location.append(list[i].location);
@@ -80,11 +76,12 @@ jQuery(function ($) {
                 $date.append(list[i].date);
 
                 var $company = $("<div>").addClass("card-title company-name");
-                $company.append(list[i].company);
+                $company.append(list[i].company.substring(0, 20));
 
                 var $link = $("<a>").addClass("waves-effect waves-light btn lime accent-3 mapToggle map-link");
                 $link.attr("data-company", list[i].company);
                 $link.attr("data-location", list[i].location);
+                $link.attr("href","#anchor");
                 $link.append("See map on link");
 
                 $content.append($jobTitle);
@@ -111,7 +108,9 @@ jQuery(function ($) {
         $iframe.attr("frameborder", "0");
         $iframe.attr("style", "border:0");
         $iframe.attr("src", gSrc + ikey + "&q=" + $addr + ", " + $city);
-        $("#map").html($iframe);
+        $("#map-frame").html($iframe);
+
+        $("#map-job-container").show();
     }
 
 
@@ -121,9 +120,9 @@ jQuery(function ($) {
 
     $("#map-job-container").hide();
     
-    $(".mapToggle").click(function (event) {
-        event.preventDefault();
-        $("#map-job-container").show();
-        console.log("button");
-      });
+    // $(".mapToggle").click(function (event) {
+    //     event.preventDefault();
+    //     $("#map-job-container").show();
+    //     console.log("button");
+    //   });
 })
