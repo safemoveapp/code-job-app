@@ -28,18 +28,30 @@
         <h1 class="header center " id="title">// == CODING JOBS;</h1>
         <div class="row">
 
-          <h4 class="header center col m10 push-m1 sm12 light flowtext">We specialize in finding the best coding jobs in the city YOU want to work.
-            To see the most recent jobs, enter your desired city below.</h4>
+          <h4 class="header center col m10 push-m1 sm12 light flowtext">We specialize in finding the best coding jobs in the city YOU want to work. To see the most recent jobs, enter
+            your desired city below.</h4>
         </div>
         <!-- <div class="row center"> -->
+
+       
+
         <div class="row ">
           <div class="input-field col s6 push-s2 white text">
-            <input placeholder="Enter your desired work city here." id="city-search" type="text">
+            <input placeholder="Enter city and state (YourCity, ST)." id="city-search" type="text">
             <label class="active" for="city"></label>
           </div>
           <div class="col s3 push-s2">
-            <a href="page2.html" id="city-cta" class="btn-large waves-effect waves-dark flowtext lime accent-3 ">Start Searching!</a>
-
+            <button id="city-cta" class="btn-large waves-effect waves-dark flowtext lime accent-3 " data-target="modal1" href="#modal1">Start Searching!</button>
+             <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+            <div class="modal-content black-text">
+              <h4>The input field is required</h4>
+              <p>Please enter your city and state like this: YourCity, ST</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+          </div>
           </div>
         </div>
         <!-- </div> -->
@@ -71,7 +83,8 @@
             <h5 class="center">Localized Search</h5>
 
             <p class="light">With Coding Jobs you can search for your next tech job and review the descriptions within your specific search
-              city.</p>
+              city.
+            </p>
           </div>
         </div>
 
@@ -93,8 +106,9 @@
             </h2>
             <h5 class="center">Map Your Commute</h5>
 
-            <p class="light"> You can see your specific job search results on a location map that lets you see your commute area BEOFRE
-              you apply.</p>
+            <p class="light"> You can see your specific job search results on a location map that lets you see your commute area BEOFRE you
+              apply.
+            </p>
           </div>
         </div>
       </div>
@@ -203,19 +217,12 @@
   </footer>
 
 
-
-
-
-
-
   <!-- scripts -->
 
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  
+  <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
   <script src="home.js"></script>
 </body>
 

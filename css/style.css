@@ -1,4 +1,6 @@
 /* Custom Stylesheet */
+
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -6,9 +8,7 @@
  * Made By MaterializeCSS.com
  */
 
-
-
-#title{
+ #title {
   font-family: 'VT323', monospace;
   color: rgb(233, 233, 238);
   font-size: 120px;
@@ -42,27 +42,32 @@ p {
   height: auto;
   color: white;
 }
-#city-search{
+
+#city-search {
   color: black;
-  
 }
-#city-cta{
-margin-top: 20px;
-color: black;
+
+#city-cta {
+  margin-top: 20px;
+  color: black;
 }
+
 .parallax-container .section {
-    width: 100%;
+  width: 100%;
 }
+
 #section-1 {
-    min-height: 350px;
+  min-height: 350px;
 }
+
 #section-2 {
-    min-height: 400px;
+  min-height: 400px;
 }
 
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -70,9 +75,11 @@ color: black;
   background: rgb(141, 81, 225); 
   
 }
+
 footer.page-footer {
   margin: 0;
 }
+
 
 /* page 2 specific styles  */
 
@@ -84,12 +91,17 @@ footer.page-footer {
   margin-top: 20px;
   margin-bottom: 10px;
   min-height: 400px;
-  border: rgb(9, 7, 43) solid 1px; /*just for viewing container*/
+  
+}
+
+.job-container {
+  padding-top: 50px;
 }
 
 #section-1-2 {
   min-height: 150px;
 }
+
 #section-2-2 {
   min-height: 150px;
 }
@@ -98,3 +110,10 @@ footer.page-footer {
   width: 25%;
   display: inline-block;
 }
+
+.card-custom {
+  height: 300px;
+ 
+}
+
+
