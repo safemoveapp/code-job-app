@@ -14,9 +14,15 @@
   font-size: 120px;
   background: rgba(0, 0, 0, 0.297);
 }
-
-#city-cta {}
-
+#name {
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+}
+#home, #credits{
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+}
+ 
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -31,7 +37,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 580px;
+  /* r */
   line-height: 0;
   height: auto;
   color: white;
@@ -58,22 +64,6 @@ p {
   min-height: 400px;
 }
 
-@media only screen and (max-width: 992px) {
-  .parallax-container .section {
-      position: absolute;
-      top: 40%;
-  }
-  #index-banner .section {
-      top: 10%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #index-banner .section {
-      top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
@@ -81,9 +71,9 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
-.page-footer {
-  background: rgb(141, 81, 225);
+.page-footer{
+  background: rgb(141, 81, 225); 
+  
 }
 
 footer.page-footer {
@@ -93,10 +83,15 @@ footer.page-footer {
 
 /* page 2 specific styles  */
 
-.map-container,
-.job-container {
-  min-height: 600px;
-  border: red solid 1px;
+.mapToggle{
+  color: black; /*makes map button text black*/
+}
+
+.map-container, .job-container{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-height: 400px;
+  border: rgb(9, 7, 43) solid 1px; /*just for viewing container*/
 }
 
 #section-1-2 {
@@ -106,13 +101,8 @@ footer.page-footer {
 #section-2-2 {
   min-height: 150px;
 }
-
 .card-size {
   height: 30%;
   width: 25%;
   display: inline-block;
-}
-
-.city-name {
-  background-color: #8e24aa;
 }
