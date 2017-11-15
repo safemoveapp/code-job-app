@@ -26,17 +26,26 @@ jQuery(function ($) {
         }).done(function (response) {
             console.log(response);
             var list = response.resultItemList;
-            for (var i = 0; i < list.length; i++) {
-                // console.log(list[i].jobTitle);
-                // console.log(list[i].location);
-                // console.log(list[i].company);
-                // console.log(list[i].detailUrl);
-                console.log("-----------------");
-                location = list[0].location;
-                console.log(location);
-            }
-
-
+            // for (var i = 0; i < list.length; i++) {
+            //     // console.log(list[i].jobTitle);
+            //     // console.log(list[i].location);
+            //     // console.log(list[i].company);
+            //     // console.log(list[i].detailUrl);
+            //     console.log("-----------------");
+            //     location = list[0].location;
+            //     console.log(location);
+            // }
+            // var jobDiv = $("<div class='carousel'>");
+       // var jobDiv = $("<div class='card - size card purple darken - 1'>  <div class='card - content white - text'>'");
+       for (i = 0; i < 10; i++) {
+        var jobDiv = $(".carousel");
+        jobDiv.append("<div class='card-size card purple darken-1'>  <div class='card-content white-text'>" + "<div class='card-title job-name'>" +
+            (list[i].jobTitle).substring(0, 30) + " </div> <div class='card-title city-name'>" + 
+            list[i].location + " </div> <div class='card-title posted-date'>" +
+            list[i].date + "</div> <div class='card-title pcompany-name' id='" + i + "'>" + list[i].company + "</div> <div class='card-title job-link'> See map for location..");
+         // above sample line replaces job posting detail with map  
+        // response.resultItemList[i].detailUrl + "' > See map for location.. </a>");
+       }
             // var $iframe = $("<iframe>");
             // $iframe.attr("width", width);
             // $iframe.attr("height", height);
@@ -46,10 +55,10 @@ jQuery(function ($) {
             // $("#map").append($iframe);
 
 
-            var plus = "+";
-            var newCity = location.split(",").join(plus);
-            console.log(newCity);
-
+            // var plus = "+";
+            // var newCity = location.split(",").join(plus);
+            // console.log(newCity);
+       
         });// end of ajax call 
 
         //console.log(test);
