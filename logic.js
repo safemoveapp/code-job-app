@@ -74,7 +74,7 @@ jQuery(function ($) {
                 $link.attr("data-company", list[i].company);
                 $link.attr("data-location", list[i].location);
                 $link.attr("href","#anchor");
-                $link.append("See map on link");
+                $link.append("See Job on Map");
                 $content.append($jobTitle);
                 $content.append($location);
                 $content.append($date);
