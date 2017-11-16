@@ -1,14 +1,6 @@
 /* Custom Stylesheet */
 
-
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
- #title {
+#title {
   font-family: 'VT323', monospace;
   color: rgb(233, 233, 238);
   font-size: 120px;
@@ -37,7 +29,6 @@ p {
 }
 
 .parallax-container {
-  /* r */
   line-height: 0;
   height: auto;
   color: white;
@@ -72,14 +63,12 @@ p {
   font-size: inherit;
 }
 .page-footer{
-  background: rgb(141, 81, 225); 
-  
+  background: rgb(141, 81, 225);  
 }
 
 footer.page-footer {
   margin: 0;
 }
-
 
 /* page 2 specific styles  */
 
@@ -90,8 +79,7 @@ footer.page-footer {
 .map-container, .job-container{
   margin-top: 20px;
   margin-bottom: 10px;
-  min-height: 400px;
-  
+  min-height: 400px;  
 }
 
 .job-container {
@@ -112,8 +100,7 @@ footer.page-footer {
 }
 
 .card-custom {
-  height: 300px;
- 
+  height: 300px; 
 }
 
 
