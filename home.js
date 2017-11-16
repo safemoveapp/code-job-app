@@ -11,10 +11,7 @@ jQuery(function ($) {
             window.localStorage.setItem('input', $input);
             location.replace("page2.html");
         }
-    });
-
-
-   
+    });   
 })
 
  
